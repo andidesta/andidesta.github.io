@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 1000vh;
+  background-color: #eeeeee;
+}
+
+section.tugas1 h1,
+h2 {
+  text-align: center;
+  margin: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+section.tugas1 h1 {
+  font-size: 6rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+section.tugas1 h2 {
+  font-size: 4rem;
+}
+
+section.tugas1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  width: 80rem;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.left-eye,
+.right-eye {
+  width: 30rem;
+  height: 20em;
+  background-color: rgb(255, 255, 255);
+  /* position: absolute; */
+  margin: 4rem;
+  border: 1px solid blue;
+}
+
+.left-eye {
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 10%;
+  animation-name: animasiEyeBorder;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.right-eye {
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  animation-name: animasiEyeBorder;
+  animation-duration: 15s;
+  /* animation-delay: 5s; */
+  animation-iteration-count: infinite;
+}
+
+.ball-eye {
+  width: 15rem;
+  height: 18rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#ball-eye-left {
+  margin-left: 8rem;
+  margin-top: 1rem;
+  animation-name: animasiMata;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+}
+#ball-eye-right {
+  margin-left: 8rem;
+  margin-top: 1rem;
+  animation-name: animasiMata;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+}
+/* animation */
+@keyframes animasiMata {
+  0% {
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+
+  10% {
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+
+  15% {
+    margin-left: 15rem;
+    margin-top: 3rem;
+  }
+
+  25% {
+    margin-left: 4rem;
+    margin-top: -1rem;
+  }
+  30% {
+    margin-left: 8rem;
+    margin-top: -2rem;
+  }
+  40% {
+    margin-left: 12rem;
+    margin-top: 1rem;
+  }
+
+  50% {
+    margin-left: 14rem;
+    margin-top: -3rem;
+  }
+
+  65% {
+    margin-left: 0rem;
+    margin-top: 4rem;
+  }
+
+  80% {
+    margin-left: -1rem;
+    margin-top: -2rem;
+  }
+}
+
+@keyframes animasiEyeBorder {
+  0% {
+    height: 20rem;
+    top: 10rem;
+  }
+  48% {
+    height: 20rem;
+    top: 10rem;
+  }
+  50% {
+    height: 0rem;
+    top: 18rem;
+  }
+  54% {
+    height: 20rem;
+    top: 10rem;
+  }
+  80% {
+    height: 15rem;
+  }
+  100% {
+    height: 20rem;
+    top: 10rem;
+  }
+}
+
+/* animation end */
+
+/* tugas 1 end */
+/* tugas 2 card */
+
+.tugas-2 {
+  display: flex;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.tugas-2 h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+section.tugas-2 article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(139, 139, 139);
+  border: 1px solid rgb(0, 0, 0);
+  margin: 4rem;
+  width: 26rem;
+  /* height: 40rem; */
+  padding: 1rem;
+}
+
+.container-card h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  background-color: chartreuse;
+  width: 25rem;
+}
+
+.container-card a.button-card {
+  display: flex;
+  text-decoration: none;
+  width: 24rem;
+  height: 5rem;
+  background-color: chartreuse;
+  margin: 1rem;
+  /* padding: 1rem; */
+  border: 1px solid rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.container-card h3 {
+  text-decoration: underline;
+  cursor: pointer;
+  src: url("#");
+  transition: 0.4;
+}
+
+.container-card h3:hover {
+  display: flex;
+  background-color: chartreuse;
+  width: 24rem;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-card a.button-card:hover {
+  background-color: rgb(104, 104, 104);
+  transform: rotate(2deg);
+  border-radius: 10%;
+}
+
+.container-card a.button-card:active {
+  background-color: aqua;
+  transform: rotate(4deg);
+  transition: 0.2s;
+}
+
+.wrapper-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: #cecece;
+}
+
+.wrapper-card img {
+  width: 24rem;
+  height: 15rem;
+  margin-top: 1rem;
+}
+
+.wrapper-card p {
+  width: 24rem;
+  height: auto;
+  margin: 1rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* tugas 2 end */
+/* tugas 3 image galery */
+
+/* tugas 3 image galery end */

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tugas3 {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; */
+  font-family: "Times New Roman", Times, serif;
+  /* float: left; */
+}
+
+.tugas3 h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 2rem;
+}
+
+.container-galerry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100rem;
+  height: auto;
+  background-color: #d4d4dd;
+  margin: auto;
+  padding: 4rem;
+  border: 2px solid black;
+}
+
+.clear {
+  clear: both;
+}
+li img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.galerry li {
+  /* display: block; */
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  list-style: none;
+  border: 1px solid #000000;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+/* .galerry IMG {
+  clear: both;
+  } */
+
+.galerry li span {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background-color: grey;
+  opacity: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20rem;
+  transition: 0.4s;
+  transform: scale(0) rotate(0);
+}
+
+.galerry li a:hover span {
+  transform: scale(1) rotate(360deg);
+  opacity: 0.5;
+}
+
+#close {
+  /* position: fixed; */
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  width: auto;
+  height: 3rem;
+  z-index: 99999;
+  /* top: 5%; */
+  /* left: 5%; */
+  /* overflow: visible; */
+  transition: 1s;
+  position: fixed;
+  top: 15.5%;
+  right: 17.8%;
+}
+/* overlay */
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(202, 202, 202, 0.62);
+  opacity: 0;
+  z-index: 9999;
+  transition: 0.4s;
+  transform: rotate(0) scale(0);
+}
+
+.overlay-container:target {
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  opacity: 100%;
+  text-align: center;
+  padding: 8% 0;
+  transform: rotate(360deg) scale(1);
+  transition: 0.4s;
+}
+
+.overlay-container a.next {
+  z-index: 99999;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-left: 2rem;
+  color: blueviolet;
+}
+
+.overlay-container a.next:hover {
+  color: chartreuse;
+  transition: 0.4s;
+}
+
+.overlay-container a.next:active {
+  color: red;
+  transition-delay: 0.2s;
+  transition: 0.2s;
+}
+
+/* overlay */
+/* troubleshooting */
+
+/* .overlay-container {
+  border: 1px solid red;
+} */
+/* 
+* {
+  border: 1px solid red;
+} */
+
+/* troubleshooting */
